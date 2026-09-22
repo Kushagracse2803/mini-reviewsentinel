@@ -1,4 +1,8 @@
-openai>=1.30.0
+groq>=0.9.0
+
+# --- Web API ----------------------------------------------------------
+fastapi>=0.110.0                 # HTTP service exposing the review pipeline
+uvicorn>=0.29.0                  # ASGI server to run app.api:app
 
 # --- Schema validation & config --------------------------------------------
 pydantic>=2.6.0                  # validates LLM JSON output + request/response bodies
