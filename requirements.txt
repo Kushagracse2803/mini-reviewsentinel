@@ -1,0 +1,13 @@
+openai>=1.30.0
+
+# --- Schema validation & config --------------------------------------------
+pydantic>=2.6.0                  # validates LLM JSON output + request/response bodies
+pydantic-settings>=2.2.0         # typed config (API keys, max retries) loaded from .env
+python-dotenv>=1.0.0             # loads .env locally (pydantic-settings uses this under the hood)
+
+# --- Testing ------------------------------------------------------------
+pytest>=8.0.0
+httpx>=0.27.0                    # required by FastAPI's TestClient for API tests
+
+# --- CLI output (optional but cheap) ----------------------------------
+rich>=13.7.0                     # readable terminal tables for findings; not load-bearing
